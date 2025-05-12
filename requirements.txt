@@ -1,0 +1,22 @@
+# Project Requirements: Medical Monitoring and Intervention in Cardiovascular Emergencies
+
+# Core Requirements:
+real-time-heart-rhythm-monitoring
+arrhythmia-detection
+controlled-medication-delivery-via-iv-infusion-on-arrhythmia-detection
+multi-layered-alert-mechanism:
+  audible-alarms-in-emergency-unit
+  visual-alarms-in-emergency-unit
+  mobile-notifications-to-medical-personnel
+
+# Bonus Requirement:
+measure-additional-vital-sign
+define-action-for-problem-with-additional-vital-sign
+    - if-above-threshold:
+        - audible-alarms-in-emergency-unit
+        - visual-alarms-in-emergency-unit
+        - mobile-notifications-to-medical-personnel
+    - if-below-threshold:
+        - audible-alarms-in-emergency-unit
+        - visual-alarms-in-emergency-unit
+        - mobile-notifications-to-medical-personnel
