@@ -1,0 +1,118 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.h-100 {
+  background-color: #c1e4eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  display: flex;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 300px; /* Fixed width for the sidebar */
+  height: 100%;
+  background-color: #cfeef5;
+  padding: 30px;
+  border-right: 2px solid #e9f1f4;
+}
+
+.content {
+  flex: 1; /* Take the remaining space */
+  padding: 20px;
+  background-color: #f2f7f8;
+  overflow-y: auto;
+}
+h1 {
+  margin-top: 20px;
+}
+body {
+  background-color: azure;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.components a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.components a:hover {
+  background-color: #2e90a3;
+  color: #e9f1f4;
+  text-decoration: none;
+}
+
+#active {
+  background-color: #2e90a3;
+  color: #000000;
+  text-decoration: none;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 300px);
+  background-color: #f2f7f8;
+  padding: 0 40px;
+  overflow-y: scroll;
+  transition: 0.3s;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.overview {
+  font-weight: 400;
+}
+
+/*Patient card*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #00000080;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.card .badge {
+  font-size: 0.75rem;
+}
+
+#active {
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out; /* Faster than default 0.6s */
+}
